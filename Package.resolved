@@ -1,5 +1,5 @@
 {
-  "originHash" : "8a13a61314cb0e10f1d22dddaabfebd1ab407a7b9ab06aa42fc1e38041a202a5",
+  "originHash" : "e943bd6d2470ae390f034bac3125b32f0ace896c430fb922d0080769335e1b7e",
   "pins" : [
     {
       "identity" : "aexml",
@@ -13,10 +13,9 @@
     {
       "identity" : "pathkit",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/kylef/PathKit.git",
+      "location" : "https://github.com/ainame/PathKit.git",
       "state" : {
-        "revision" : "3bfd2737b700b9a36565a8c94f4ad2b050a5e574",
-        "version" : "1.0.1"
+        "revision" : "63b971dbead207199a4ecfbf66afc61314e2edad"
       }
     },
     {
