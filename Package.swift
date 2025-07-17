@@ -1,4 +1,4 @@
-// swift-tools-version:6.0.0
+// swift-tools-version:6.1.0
 
 import PackageDescription
 
@@ -9,7 +9,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/tadija/AEXML.git", .upToNextMinor(from: "4.7.0")),
-        .package(url: "https://github.com/ainame/PathKit.git", .revision("03ce551397e2cd85d3e137fd1914ee68e6b9a642")),
+        .package(url: "https://github.com/ainame/PathKit.git", revision: "e83b09e6062bce8f95b1f9a0ae407269879bf62f"),
     ],
     targets: [
         .target(name: "XcodeProj",
