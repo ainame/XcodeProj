@@ -9,16 +9,13 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/tadija/AEXML.git", .upToNextMinor(from: "4.7.0")),
-        .package(url: "https://github.com/ainame/PathKit.git", revision: "70fe987d882e92e715faa4deb9444821ddd76571"),
+        .package(path: "../PathKit"),
     ],
     targets: [
         .target(name: "XcodeProj",
                 dependencies: [
                     .product(name: "PathKit", package: "PathKit"),
                     .product(name: "AEXML", package: "AEXML"),
-                ],
-                swiftSettings: [
-                    .enableExperimentalFeature("StrictConcurrency"),
                 ]),
         .testTarget(name: "XcodeProjTests", dependencies: ["XcodeProj"]),
     ]

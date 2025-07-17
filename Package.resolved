@@ -1,0 +1,23 @@
+{
+  "originHash" : "41ff05f7550559ad2073564255567cf7447753f9e1e79095587b5bee757d2c91",
+  "pins" : [
+    {
+      "identity" : "aexml",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tadija/AEXML.git",
+      "state" : {
+        "revision" : "db806756c989760b35108146381535aec231092b",
+        "version" : "4.7.0"
+      }
+    },
+    {
+      "identity" : "pathkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ainame/PathKit.git",
+      "state" : {
+        "revision" : "70fe987d882e92e715faa4deb9444821ddd76571"
+      }
+    }
+  ],
+  "version" : 3
+}
