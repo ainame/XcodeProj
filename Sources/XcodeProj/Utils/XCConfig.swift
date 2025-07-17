@@ -67,10 +67,10 @@ enum XCConfigParser {
                     var config: XCConfig?
                     do {
                         // first try to load the included xcconfig relative to the current xcconfig
-                        config = try XCConfig(path: path.parent() + includePath, projectPath: projectPath)
+                        config = try XCConfig(path: path.parent + includePath, projectPath: projectPath)
                     } catch XCConfigError.notFound(_) where projectPath != nil {
                         // if that fails, try to load the included xcconfig relative to the project
-                        config = try? XCConfig(path: projectPath!.parent() + includePath, projectPath: projectPath)
+                        config = try? XCConfig(path: projectPath!.parent + includePath, projectPath: projectPath)
                     } catch {
                         config = nil
                     }

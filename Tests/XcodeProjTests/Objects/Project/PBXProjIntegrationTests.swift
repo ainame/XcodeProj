@@ -31,7 +31,7 @@
                 try? tmpDir.delete()
             }
 
-            let fixturePath = fixturePath().parent()
+            let fixturePath = fixturePath().parent
             let xcodeprojPath = tmpDir + "Project.xcodeproj"
             try fixturePath.copy(xcodeprojPath)
 

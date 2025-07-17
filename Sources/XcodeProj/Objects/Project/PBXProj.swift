@@ -258,10 +258,10 @@ extension PBXProj {
     /// - Parameters:
     ///   - path: path to .xcodeproj directory.
     func updateProjectName(path: Path) throws {
-        guard path.parent().extension == "xcodeproj" else {
+        guard path.parent.extension == "xcodeproj" else {
             return
         }
-        let projectName = path.parent().lastComponent.split(separator: ".").first
+        let projectName = path.parent.lastComponent.split(separator: ".").first
         try rootProject()?.name = projectName.map(String.init) ?? ""
     }
 }

@@ -114,7 +114,7 @@ public final class PBXBatchUpdater {
     }
 
     private func groupAndGroupPathForFile(at path: Path, project: PBXProject) throws -> (PBXGroup, Path) {
-        let groupPath = path.parent()
+        let groupPath = path.parent
         if let fileParentGroup = try lazilyInstantiateGroups()[groupPath] {
             return (fileParentGroup, groupPath)
         }

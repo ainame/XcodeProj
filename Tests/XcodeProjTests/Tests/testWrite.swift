@@ -19,7 +19,7 @@ func testWrite<T: Writable>(file: StaticString = #filePath,
                             modify: (T) -> T,
                             assertion: (_ before: T, _ after: T) -> Void) throws
 {
-    let copyPath = path.parent() + "copy.\(path.extension!)"
+    let copyPath = path.parent + "copy.\(path.extension!)"
     try? copyPath.delete()
     try? path.copy(copyPath)
     let got = try initModel(copyPath)
