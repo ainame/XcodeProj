@@ -1,5 +1,5 @@
 {
-  "originHash" : "0f78567d55b0b2f24185ee8b8f8269bfe34a3c7eb844aa213f612fdadb4307dd",
+  "originHash" : "8dbce4853bc230df94f5b46d178b8873d42785023bab45425d03959a780c1902",
   "pins" : [
     {
       "identity" : "aexml",
@@ -8,6 +8,15 @@
       "state" : {
         "revision" : "db806756c989760b35108146381535aec231092b",
         "version" : "4.7.0"
+      }
+    },
+    {
+      "identity" : "pathkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ainame/PathKit.git",
+      "state" : {
+        "branch" : "b97d4fe",
+        "revision" : "b97d4fe305e38c6ad7af4337092446ae725bdb99"
       }
     }
   ],
